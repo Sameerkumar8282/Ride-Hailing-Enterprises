@@ -1,0 +1,17 @@
+spring:
+  profiles:
+    active: native
+  application:
+    name: config-server
+     
+#search for all configuration file for our microservice
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/configurations
+
+#Entry Point for the api
+server:
+  port: 8888
+
