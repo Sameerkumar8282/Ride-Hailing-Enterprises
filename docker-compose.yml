@@ -5,6 +5,7 @@ services:
     environment:
       POSTGRES_USER: sam
       POSTGRES_PASSWORD: sam
+      POSTGRES_DB: user_ride # Add this line
       PGDATA: /data/postgres
     volumes:
       - postgres:/data/postgres

@@ -1,0 +1,9 @@
+spring:
+    config:
+        import: optional:configserver:http://localhost:8888
+    application:
+        name: user-service
+
+jwtSecret: aHR0cHM6Ly93d3cueW91YmlsdW1hbWVyaWNhLmNvbS9sb2dpbi8=
+jwtExpirationMs: 86400000
+
